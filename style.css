@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(40, 40, 40, 0.5;);
+  font-family: "League Spartan", sans-serif;
+}
+.top-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.bot-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+main {
+  max-width: 1110px;
+  min-height: 100px;
+}
+.top {
+  width: 100%;
+  min-height: 50px;
+  margin-bottom: 71px;
+  display: flex;
+}
+.top-left {
+  width: 50%;
+  min-height: 100px;
+}
+.top-left > h2 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 48px;
+  color: #512051;
+  letter-spacing: -2px;
+  margin-bottom: 16px;
+}
+.top-left > p {
+  font-size: 19px;
+  font-weight: 500;
+  color: #927b91;
+  line-height: 25px;
+  letter-spacing: -0.633px;
+}
+
+.top-right {
+  width: 50%;
+  min-height: 100px;
+}
+.rate {
+  padding: 20px 32px;
+  background-color: #f7f2f7;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+#second-rate {
+  position: relative;
+  left: 48.36px;
+}
+#third-rate {
+  position: relative;
+  left: 95.7px;
+}
+.bot {
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  gap: 30px;
+}
+.card {
+  max-width: 350px;
+  min-height: 234px;
+  background-color: #512051;
+  border-radius: 8px;
+  padding: 40px 32px 35px 32px;
+}
+.profile {
+  display: flex;
+  gap: 23px;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.profile > div > h4 {
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.profile > div > p {
+  color: #ee69a4;
+}
+.card > p {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.304px;
+}
+
+#card-2 {
+  position: relative;
+  top: 16px;
+}
+#card-3 {
+  position: relative;
+  top: 32px;
+}
+@media (max-width: 768px) {
+  body {
+    padding: 82px 24px 99px;
+  }
+  .top-image {
+    display: none;
+  }
+  .bot-image {
+    display: none;
+  }
+  .top {
+    flex-direction: column;
+  }
+  .top-left > p {
+    text-align: center;
+  }
+  .top-left > h2 {
+    text-align: center;
+  }
+  .bot {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .top-left {
+    width: 100%;
+  }
+  .top-right {
+    width: 100%;
+  }
+
+  .rate {
+    flex-direction: column;
+  }
+  #second-rate {
+    position: unset;
+  }
+  #third-rate {
+    position: unset;
+  }
+}
